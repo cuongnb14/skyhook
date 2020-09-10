@@ -7,3 +7,5 @@ Dockerfile
 README.md
 docs/
 images/
+nodemodule/
+dist/

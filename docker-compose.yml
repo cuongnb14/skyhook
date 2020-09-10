@@ -1,0 +1,15 @@
+version: "3.2"
+services:
+  skyhook:
+    image: cuongnb14/skyhook:1.0
+    container_name: skyhook
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10M"
+        max-file: "3"
